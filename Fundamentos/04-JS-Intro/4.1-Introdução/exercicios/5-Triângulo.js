@@ -1,9 +1,15 @@
-const a = 45
-const b = 45
-const c = 400
+const a = 45;
+const b = 500;
+const c = 90;
 
 
-if ((a || b || b) > 360 || (a || b || b) <= 0) {
+if (a > 360 || a <= 0) {
+    console.log("Ângulo não é valido")
+}
+else if (b > 360 || b <= 0) {
+    console.log("Ângulo não é valido")
+}
+else if (c > 360 || c <= 0) {
     console.log("Ângulo não é valido")
 }
 else if (a + b + c === 180) {
