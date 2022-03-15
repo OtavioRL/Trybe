@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // -------------------------------------------- //
+      let titulo = document.createElement("h1");
+      
+      titulo.innerText = "Exercício 5.2 - JavaScript DOM";
+      titulo.className = "title"
+      // -------------------------------------------- //
+      let main = document.createElement("main");
+
+      main.className = "main-content";
+      // -------------------------------------------- //
+      let section = document.createElement("section");
+
+      section.className = "center-content";
+      // -------------------------------------------- //
+      let p = document.createElement("p");
+
+      p.innerText = "texto aleatório de teste :)";
+      // -------------------------------------------- //      
+      let sectionLeft = document.createElement("section");
+
+      sectionLeft.className = "left-content";
+      // -------------------------------------------- //
+      let sectionRight = document.createElement("section");
+
+      sectionRight.className = "right-content";
+      // -------------------------------------------- //
+      let imagem = document.createElement("img");
+
+      imagem.className = "small-image";
+
+      imagem.src = "https://picsum.photos/200"
+      // -------------------------------------------- //
+      let h31 = document.createElement("h3");
+      
+      h31.innerText = "h3";
+      h31.className = "description";
+      // -------------------------------------------- //
+      let h32 = document.createElement("h3");
+      
+      h32.innerText = "h3";
+      h32.className = "description";
+      // -------------------------------------------- //
+      let h33 = document.createElement("h3");
+      h33.className = "description";
+      h33.innerText = "h3";
+      // -------------------------------------------- //
+      let ul = document.createElement("ul");
+
+      let li1 = document.createElement("li");
+      li1.innerText = "Um"
+      let li2 = document.createElement("li");
+      li2.innerText = "Dois"
+      let li3 = document.createElement("li");
+      li3.innerText = "Tres"
+      let li4 = document.createElement("li");
+      li4.innerText = "Quatro"
+      let li5 = document.createElement("li");
+      li5.innerText = "Cinco"
+      let li6 = document.createElement("li");
+      li6.innerText = "Seis"
+      let li7 = document.createElement("li");
+      li7.innerText = "Sete"
+      let li8 = document.createElement("li");
+      li8.innerText = "Oito"
+      let li9 = document.createElement("li");
+      li9.innerText = "Nove"
+      let li10 = document.createElement("li");
+      li10.innerText = "Dez"
+      // -------------------------------------------- //
+      function colocar(pai, elemento) {
+        let junto = document.querySelector(pai).appendChild(elemento);
+        return junto;
+      }
+      // -------------------------------------------- //
+      colocar("body", titulo);
+      // -------------------------------------------- //
+      colocar("body", main);
+      // -------------------------------------------- //
+      colocar("main", section);
+      // -------------------------------------------- //
+      colocar("section", p);
+      // -------------------------------------------- //
+      colocar("main", sectionLeft);
+      // -------------------------------------------- //
+      colocar("main", sectionRight);
+      // -------------------------------------------- //
+      colocar(".left-content", imagem);
+      // -------------------------------------------- //
+      colocar(".right-content", ul);
+      // -------------------------------------------- //
+      colocar("ul", li1);
+      colocar("ul", li2);
+      colocar("ul", li3);
+      colocar("ul", li4);
+      colocar("ul", li5);
+      colocar("ul", li6);
+      colocar("ul", li7);
+      colocar("ul", li8);
+      colocar("ul", li9);
+      colocar("ul", li10);
+      // -------------------------------------------- //
+      colocar("main", h31);
+      colocar("main", h32);
+      colocar("main", h33);
+      // -------------------------------------------- //      
+      //document.querySelector("main").removeChild(sectionLeft);
+      //document.querySelector(".right-content").style.marginRight = "auto";
+      //document.querySelector("main").style.color = "green";
+      //document.querySelector("ul").removeChild(li9);
+      //document.querySelector("ul").removeChild(li10);
+      
+    </script>
+  </body>
+</html>
