@@ -61,6 +61,7 @@
       let titulo = document.createElement("h1");
       
       titulo.innerText = "Exercício 5.2 - JavaScript DOM";
+      titulo.className = "title"
       // -------------------------------------------- //
       let main = document.createElement("main");
 
@@ -91,13 +92,15 @@
       let h31 = document.createElement("h3");
       
       h31.innerText = "h3";
+      h31.className = "description";
       // -------------------------------------------- //
       let h32 = document.createElement("h3");
       
       h32.innerText = "h3";
+      h32.className = "description";
       // -------------------------------------------- //
       let h33 = document.createElement("h3");
-      
+      h33.className = "description";
       h33.innerText = "h3";
       // -------------------------------------------- //
       let ul = document.createElement("ul");
@@ -127,15 +130,23 @@
         let junto = document.querySelector(pai).appendChild(elemento);
         return junto;
       }
+      // -------------------------------------------- //
       colocar("body", titulo);
+      // -------------------------------------------- //
       colocar("body", main);
+      // -------------------------------------------- //
       colocar("main", section);
+      // -------------------------------------------- //
       colocar("section", p);
+      // -------------------------------------------- //
       colocar("main", sectionLeft);
+      // -------------------------------------------- //
       colocar("main", sectionRight);
+      // -------------------------------------------- //
       colocar(".left-content", imagem);
+      // -------------------------------------------- //
       colocar(".right-content", ul);
-
+      // -------------------------------------------- //
       colocar("ul", li1);
       colocar("ul", li2);
       colocar("ul", li3);
@@ -145,7 +156,17 @@
       colocar("ul", li7);
       colocar("ul", li8);
       colocar("ul", li9);
-      colocar("ul", li10);      
+      colocar("ul", li10);
+      // -------------------------------------------- //
+      colocar("main", h31);
+      colocar("main", h32);
+      colocar("main", h33);
+      // -------------------------------------------- //      
+      //document.querySelector("main").removeChild(sectionLeft);
+      //document.querySelector(".right-content").style.marginRight = "auto";
+      //document.querySelector("main").style.color = "green";
+      //document.querySelector("ul").removeChild(li9);
+      //document.querySelector("ul").removeChild(li10);
       
     </script>
   </body>
