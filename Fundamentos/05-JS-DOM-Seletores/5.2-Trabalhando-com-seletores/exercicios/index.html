@@ -57,26 +57,78 @@
   </head>
   <body>
     <script>
+      // -------------------------------------------- //
       let titulo = document.createElement("h1");
       
       titulo.innerText = "Exercício 5.2 - JavaScript DOM";
-
+      // -------------------------------------------- //
       let main = document.createElement("main");
 
       main.className = "main-content";
-
+      // -------------------------------------------- //
       let section = document.createElement("section");
 
       section.className = "center-content";
-
+      // -------------------------------------------- //
       let p = document.createElement("p");
 
       p.innerText = "texto aleatório de teste :)";
+      // -------------------------------------------- //      
+      let sectionLeft = document.createElement("section");
+
+      sectionLeft.className = "left-content";
+      // -------------------------------------------- //
+      let sectionRight = document.createElement("section");
+
+      sectionRight.className = "right-content";
+      // -------------------------------------------- //
+      let imagem = document.createElement("img");
+
+      imagem.className = "small-image";
+
+      imagem.src = "https://picsum.photos/200"
+      // -------------------------------------------- //
+      let ul = document.createElement("ul");
+
+      let li1 = document.createElement("li");
+      li1.innerText = "Um"
+      let li2 = document.createElement("li");
+      li2.innerText = "Dois"
+      let li3 = document.createElement("li");
+      li3.innerText = "Tres"
+      let li4 = document.createElement("li");
+      li4.innerText = "Quatro"
+      let li5 = document.createElement("li");
+      li5.innerText = "Cinco"
+      let li6 = document.createElement("li");
+      li6.innerText = "Seis"
+      let li7 = document.createElement("li");
+      li7.innerText = "Sete"
+      let li8 = document.createElement("li");
+      li8.innerText = "Oito"
+      let li9 = document.createElement("li");
+      li9.innerText = "Nove"
+      let li10 = document.createElement("li");
+      li10.innerText = "Dez"
 
       document.querySelector("body").appendChild(titulo);
       document.querySelector("body").appendChild(main);
       document.querySelector("main").appendChild(section);
       document.querySelector("section").appendChild(p);
+      document.querySelector("main").appendChild(sectionLeft);
+      document.querySelector("main").appendChild(sectionRight);
+      document.querySelector(".left-content").appendChild(imagem);
+      document.querySelector(".right-content").appendChild(ul);
+      document.querySelector("ul").appendChild(li1);
+      document.querySelector("ul").appendChild(li2);
+      document.querySelector("ul").appendChild(li3);
+      document.querySelector("ul").appendChild(li4);
+      document.querySelector("ul").appendChild(li5);
+      document.querySelector("ul").appendChild(li6);
+      document.querySelector("ul").appendChild(li7);
+      document.querySelector("ul").appendChild(li8);
+      document.querySelector("ul").appendChild(li9);
+      document.querySelector("ul").appendChild(li10);
     </script>
   </body>
 </html>
