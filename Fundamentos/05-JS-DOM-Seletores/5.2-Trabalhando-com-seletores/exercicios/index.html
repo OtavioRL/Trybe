@@ -88,6 +88,18 @@
 
       imagem.src = "https://picsum.photos/200"
       // -------------------------------------------- //
+      let h31 = document.createElement("h3");
+      
+      h31.innerText = "h3";
+      // -------------------------------------------- //
+      let h32 = document.createElement("h3");
+      
+      h32.innerText = "h3";
+      // -------------------------------------------- //
+      let h33 = document.createElement("h3");
+      
+      h33.innerText = "h3";
+      // -------------------------------------------- //
       let ul = document.createElement("ul");
 
       let li1 = document.createElement("li");
@@ -110,25 +122,31 @@
       li9.innerText = "Nove"
       let li10 = document.createElement("li");
       li10.innerText = "Dez"
+      // -------------------------------------------- //
+      function colocar(pai, elemento) {
+        let junto = document.querySelector(pai).appendChild(elemento);
+        return junto;
+      }
+      colocar("body", titulo);
+      colocar("body", main);
+      colocar("main", section);
+      colocar("section", p);
+      colocar("main", sectionLeft);
+      colocar("main", sectionRight);
+      colocar(".left-content", imagem);
+      colocar(".right-content", ul);
 
-      document.querySelector("body").appendChild(titulo);
-      document.querySelector("body").appendChild(main);
-      document.querySelector("main").appendChild(section);
-      document.querySelector("section").appendChild(p);
-      document.querySelector("main").appendChild(sectionLeft);
-      document.querySelector("main").appendChild(sectionRight);
-      document.querySelector(".left-content").appendChild(imagem);
-      document.querySelector(".right-content").appendChild(ul);
-      document.querySelector("ul").appendChild(li1);
-      document.querySelector("ul").appendChild(li2);
-      document.querySelector("ul").appendChild(li3);
-      document.querySelector("ul").appendChild(li4);
-      document.querySelector("ul").appendChild(li5);
-      document.querySelector("ul").appendChild(li6);
-      document.querySelector("ul").appendChild(li7);
-      document.querySelector("ul").appendChild(li8);
-      document.querySelector("ul").appendChild(li9);
-      document.querySelector("ul").appendChild(li10);
+      colocar("ul", li1);
+      colocar("ul", li2);
+      colocar("ul", li3);
+      colocar("ul", li4);
+      colocar("ul", li5);
+      colocar("ul", li6);
+      colocar("ul", li7);
+      colocar("ul", li8);
+      colocar("ul", li9);
+      colocar("ul", li10);      
+      
     </script>
   </body>
 </html>
