@@ -1,0 +1,51 @@
+body {
+  background-color: #6ac084;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #64c0b8;
+  padding: 50px;
+  text-align: center;
+}
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 4em;
+}
+footer {
+  position: fixed;
+  bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+#inputIdade {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+#inputNome {
+  position: fixed;
+  left: 90px;
+  bottom: 10px;
+}
+#h2Idade {
+  position: fixed;
+  right: 200px;
+  bottom: -15px;
+}
+#h2Nome {
+  position: fixed;
+  bottom: -15px;
+}
+#lista {
+  text-align: center;
+  list-style-type: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2em;  
+}
+#botao {
+  position: fixed;
+  left: 44%;
+  bottom: 10px;
+  width: 150px;
+}
