@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TrybeTrip</title>
+  </head>
+  <body>
+    <header>
+      <h1>Formulário Trybe Trip</h1>
+    </header>
+    <main>
+      <forms method="GET" id="forms">
+        <label for="name">
+          Nome:
+          <input type="text" name="Nome" id="name" />
+        </label>
+        <br />
+        <label for="email">
+          Email:
+          <input type="text" name="Email" id="email" />
+        </label>
+        <br />
+        <h3>Destino preferido:</h3>
+        <label for="destino1">
+          <input type="radio" name="Destino" id="destino1" /> Canadá
+        </label>
+        <label for="destino2">
+          <input type="radio" name="Destino" id="destino2" /> Itália
+        </label>
+        <label for="destino3">
+          <input type="radio" name="Destino" id="destino3" /> Florida
+        </label>
+        <label for="destino4">
+          <input type="radio" name="Destino" id="destino4" /> Paraty
+        </label>
+        <br />
+        <h3>
+          Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso
+          TrybeTrip?
+        </h3>
+        <textarea name="porque" id="pq" cols="50" rows="10"></textarea>
+        <br />
+        <h3>Qual a melhor data para realizar sua viagem?</h3>
+        <br />
+        <label for="data">
+          Data:
+          <input type="date" name="data" id="data" />
+        </label>
+        <br />
+        <label for="concordo1">
+          Gostaria de receber outras incríveis oportunidades oferecidas pela
+          Trybe?
+          <input type="checkbox" name="concordo" id="concordo1" />
+        </label>
+        <br />
+        <label for="concordo2">
+          Concordo que imagens das minhas férias poderão ser usadas na
+          divulgação de concursos futuros.
+          <input type="checkbox" name="concordo" id="concordo2" />
+        </label>
+        <br>
+        <button type="submit">Enviar</button>        
+      </forms>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
